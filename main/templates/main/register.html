@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static '/main/main.css' %}" media="screen" title="no title"  charset="utf-8">	
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  	crossorigin="anonymous">
+	</script>
+</head>
+<body>
+<img class="logo" src="static/main/OEN_logo copy.png">
+<div class="headerhref">
+		<a class="headerhref" href="/">H O M E</a>
+		
+		<a class="headerhref" href="signup">L O G I N</a>
+	</div>
+<div id="wrapper2">
+	<h1 class="login">R e g i s t e r</h1>
+	<form action="register_user" method="post">
+		{% csrf_token %}
+		<!-- name -->
+		<input class="loginform" type="text" name="first_name" placeholder="First Name">
+		<input class="loginform" type="text" name="last_name" placeholder="Last Name">
+		<input class="loginform" type="text" name="username" placeholder="username">
+		<input class="loginform" type="text" name="email" placeholder="email">
+		<hr>
+		<input class="loginform" type="text" name="zipcode" placeholder="zipcode (optional)">
+		<input class="loginform" type="text" name="phone" placeholder="phone (optional)">
+		<hr>
+		<input class="loginform" type="password" name="pword" placeholder="password"> 
+ 	 	 <input class="loginform" type="password" name="confirmpassword" placeholder="Confirm Password">
+		<input class="loginsubmit" type="submit" name="LOG IN">
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<link rel="stylesheet" href="{% static '/main/main.css' %}" media="screen" title="no title"  charset="utf-8">	
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  	crossorigin="anonymous">
+	</script>
+	<title>EON</title>
+	<script type="text/javascript">
+		// $('.dditem1').hide(0);
+		// $('.dditem2').hide(0);
+		// $('.hr1').hide(0);
+		// $('.hr2').hide(0);
+		// $(document).ready(function(){
+		// 	$('.dditem1').hide(0);
+		// 	$('.dditem2').hide(0);
+		// 	$('.hr1').hide(0);
+		// 	$('.hr2').hide(0);
+		// 	//   -----  box1  -----
+		// 	$('.box1').click(function(){
+		// 		$('.textonimage').animate({top: "61%"});
+		// 		$('.textonimage2').animate({top: "84%"});
+		// 		$(".seconddown").animate({margin: "130px 0px 0px 6px"}, function(){
+		// 			$('.hr1').fadeIn(275);
+		// 			$(".dditem1").fadeIn(1250);
+		// 		});
+		// 	});
+		// 	//   -----  box2  -----
+		// 	$('.box2').click(function(){
+		// 		$('.textonimage').animate({top:"76%"});
+		// 		$('.textonimage2').animate({top:"99%"});
+		// 		$(".thirddown").animate({margin: "136px 0px 0px 0px"}, function(){
+		// 			$('.hr2').fadeIn(275);
+		// 			$(".dditem2").fadeIn(1250);
+		// 		});
+		// 	});
+		// }); //----------------- END : jquery
+	</script>
+</head>
+<body>
+<img class="logo" src="static/main/OEN_logo copy.png">
+<div id="wrapper1">	
+
+	<div class="headerhref">
+		<a class="headerhref" href="/">H O M E</a>
+		<a class="headerhref" href="signup">L O G <span class="invisible">_</span>I N</a>
+	</div>
+
+	<div class="header box1">
+		<div class="bar">
+			<a href="">W H O <span class="invisible">_</span> W E <span class="invisible">_ </span> A R E</a> 
+				<ul class="primary-nav__dropdown-list">
+					<li class="dditem1">
+						<div class="dditem1">
+							<a class="nonheader" href="ourteam">O U R <span class="invisible">_</span> T E A M </a>
+						</div>
+					</li>
+					<hr class="hr1">
+					<li class="dditem1">
+						<div class="dditem1">
+							<a class="nonheader" href="ourmission">O U R <span class="invisible">_</span> M I S S I O N</a>
+						</div>
+					</li>
+					<hr class="hr1">
+					<li class="dditem1">
+						<div class="dditem1">
+							<a class="nonheader" href="ourpartners">O U R <span class="invisible">_</span> P A R T N E R S</a>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<div class="header seconddown box2">
+		<div class="bar">
+			<a href="">E N G A G E</a>
+				<ul class="primary-nav__dropdown-list">
+					<li class="dditem2">
+						<div class="dditem2">
+							<a class="nonheader" href="register">S I G N <span class="invisible">_</span> U P
+						</div></a>
+					</li>
+					<hr class="hr2">
+					<li class="dditem2">
+						<div class="dditem2">
+							<a class="nonheader" href="yourcommunity">Y O U R <span class="invisible">_</span> C O M M U N I T Y</a>
+						</div>
+					</li>
+					<hr class="hr2">
+					<li class="dditem2">
+						<div class="dditem2">
+							<a class="nonheader" href="getactive">G E T <span class="invisible">_</span> A C T I V E</a>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<div class="thirddown">
+		<div class="explore"><h1>E X P L O R E</h1></div>
+		<div class="explorebox1">
+			<img class="fade_meh" src="static/main/citypic_tulsaok.jpg"> <!-- END : img --> 
+			<div class="textonimage">
+				T U L S A 
+			</div>
+		</div>
+		<div class="explorebox2">
+			<img class="fade_meh" src="static/main/citypic_okc.jpg"> <!-- END : img --> 
+			<div class="textonimage2">
+				O K C
+			</div>
+		</div>
+	</div>
+</div> 	   <!--     END : wrapper      -->
+</body>
+</html>

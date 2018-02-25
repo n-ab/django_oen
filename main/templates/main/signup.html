@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static '/main/main.css' %}" media="screen" title="no title"  charset="utf-8">	
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  	crossorigin="anonymous">
+	</script>
+</head>
+<body>
+<img class="logo" src="static/main/OEN_logo copy.png">
+<div class="headerhref">
+		<a class="headerhref" href="/">H O M E</a>
+		
+		<a class="headerhref" href="register">R E G I S T E R</a>
+	</div>
+<div id="wrapper2">
+	<h1 class="login">L o g i n</h1>
+	<form action="login" method="post">
+		{% csrf_token %}
+		<input class="loginform" type="text" name="field1" placeholder="email">
+		<input class="loginform" type="password" name="field2" placeholder="password">
+		<input class="loginsubmit" type="submit" name="LOG IN">
+	</form>
+</div>
+</body>
+</html>

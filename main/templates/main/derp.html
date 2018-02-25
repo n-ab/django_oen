@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/main/main.css' %}" media="screen" title="no title"  charset="utf-8">   
+    <script 
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Buttons | Bootstrap Sandbox</title>
+</head>
+<body>
+     <img class="logo" src="static/main/OEN_logo copy.png">
+      <div class="container">
+        <div class="btn-group rounded-0">
+            <button class="btn btn-secondary rounded-0" type="button">My Button</button>
+            <button class="btn btn-secondary dropdown-toggle rounded-0" type="button" data-toggle="dropdown">
+                <span>Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link One</a>
+                <a class="dropdown-item" href="#">Link Two</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link Three</a>
+            </div>
+        </div>
+    </div><!-- ./container -->
+   
+<div id="wrapper1"> 
+
+    <div class="headerhref">
+        <a class="headerhref" href="/">H O M E</a>
+        <a class="headerhref" href="signup">L O G <span class="invisible">_</span>I N</a>
+    </div>
+
+    <div class="header box1">
+        <div class="bar">
+            <a href="">W H O <span class="invisible">_</span> W E <span class="invisible">_ </span> A R E</a> 
+                <ul class="primary-nav__dropdown-list">
+                    <li class="dditem1">
+                        <div class="dditem1">
+                            <a class="nonheader" href="ourteam">O U R <span class="invisible">_</span> T E A M </a>
+                        </div>
+                    </li>
+                    <hr class="hr1">
+                    <li class="dditem1">
+                        <div class="dditem1">
+                            <a class="nonheader" href="ourmission">O U R <span class="invisible">_</span> M I S S I O N</a>
+                        </div>
+                    </li>
+                    <hr class="hr1">
+                    <li class="dditem1">
+                        <div class="dditem1">
+                            <a class="nonheader" href="ourpartners">O U R <span class="invisible">_</span> P A R T N E R S</a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="header seconddown box2">
+        <div class="bar">
+            <a href="">E N G A G E</a>
+                <ul class="primary-nav__dropdown-list">
+                    <li class="dditem2">
+                        <div class="dditem2">
+                            <a class="nonheader" href="register">S I G N <span class="invisible">_</span> U P
+                        </div></a>
+                    </li>
+                    <hr class="hr2">
+                    <li class="dditem2">
+                        <div class="dditem2">
+                            <a class="nonheader" href="yourcommunity">Y O U R <span class="invisible">_</span> C O M M U N I T Y</a>
+                        </div>
+                    </li>
+                    <hr class="hr2">
+                    <li class="dditem2">
+                        <div class="dditem2">
+                            <a class="nonheader" href="getactive">G E T <span class="invisible">_</span> A C T I V E</a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="thirddown">
+        <div class="explore"><h1>E X P L O R E</h1></div>
+        <div class="explorebox1">
+            <img class="fade_meh" src="static/main/citypic_tulsaok.jpg"> <!-- END : img --> 
+            <div class="textonimage">
+                T U L S A 
+            </div>
+        </div>
+        <div class="explorebox2">
+            <img class="fade_meh" src="static/main/citypic_okc.jpg"> <!-- END : img --> 
+            <div class="textonimage2">
+                O K C
+            </div>
+        </div>
+    </div>
+</div>     <!--     END : wrapper      -->
+    <div style="margin-top:500px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
