@@ -38,8 +38,9 @@ class User_manager(models.Manager):
 		response_to_views = {}
 		user = User.objects.get(email = post_data['field1'])
 		print(user)
+		print(user.first_name)
 		if user:
-			if(bcrypt.checkpw(post_data['field2'].encode(), user.pword.encode())):
+			if bcrypt.checkpw(post_data['field2'].encode(), user.pword.encode()):
 				response_to_views['status'] = True
 				response_to_views['user'] = user
 			else:

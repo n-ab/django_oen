@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
 from main.models import User, User_manager
+from events.models import Event, Event_manager
+from django.contrib import messages
 # Create your views here.
 def index(request):
 	print("--- index ---")
@@ -74,6 +76,6 @@ def okc(request):
 	print("--- okc ---")
 	return render(request, 'main/okc.html')
 
-def derp(request):
-	print("within UDEMY COURSE - Bootstrap")
-	return render(request, 'main/derp.html')
+def create_event(request):
+	print("--- create_event page ---")
+	return render(request, 'main/createevent.html')

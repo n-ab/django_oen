@@ -61,7 +61,7 @@ h3{
 	opacity: 0;
 }
 .header{
-	background-color: #3d8396;
+	
 	/*position: absolute;*/
 	/*z-index: -0;*/
 	/*transform: skew(0, 0deg);*/
@@ -69,13 +69,9 @@ h3{
 	margin: 3px 0px 0px 6px;
 	height: 35px;
 	width: 379px;
-	text-align: center;
-	border-style: solid;
-	border-spacing: thin;
-	border-color: black;
+	
 }
 .header2{
-	background-color: #3d8396;
 	/*position: absolute;*/
 	/*z-index: -0;*/
 	/*transform: skew(0, 0deg);*/
@@ -166,9 +162,7 @@ a{
 body{
 	margin: 0;
 }
-img{
-	width: 10%;
-}
+
 input{
 	display: block;
 	padding-top: 8px;

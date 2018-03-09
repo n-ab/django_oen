@@ -19,6 +19,7 @@ urlpatterns = [
 	path('getactive', views.getactive, name='getactive'),
 	path('tulsa', views.tulsa, name='tulsa'),
 	path('okc', views.okc, name='okc'),
-	path('derp', views.derp, name='derp'),
+	path('create_event', views.create_event, name='createevent'),
+	
 ] + static(settings.STATIC_URL,
 	document_root=settings.STATIC_ROOT)
